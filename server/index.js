@@ -19,9 +19,9 @@ const DBL = require('dblapi.js');
 //CONSTANTS
 //==========================
 const client = new CommandoClient({
-    commandPrefix: '$',
+    commandPrefix: '!',
     owner: [
-      '338334949331697664' //Light Yagami
+      '577048808983232513' //frisky
     ],
     invite: 'https://discord.gg/JGsgBsN',
     disableEveryone: true
@@ -140,10 +140,14 @@ mongoose
     );
     //->When Ready
     client.on('ready', () =>
-      client.user.setActivity('with Cards | $help', { type: 'PLAYING' })
+      client.user.setActivity('with Cards | !help', { type: 'PLAYING' })
     );
     //==========================
-  });
+
+    
+  })
+    
+    bot.login('process.env.token');
 //==========================
 
 //==========================
